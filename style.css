@@ -24,6 +24,10 @@ body{
 	--brunswick-green: #14453d;
 }
 
+a{
+	text-decoration: none;
+}
+
 
 .blur, .blur2{
 	height: 100%;
@@ -49,8 +53,15 @@ body{
 	font-style: italic;
 	text-align: center;
 	color: var(--isabelline);
-	padding: 5rem;
+	margin: 4rem;
+	padding: 1rem;
 	padding-bottom: 2.5rem;
+	transition: 0.5s;
+}
+
+#title-container h1:hover{
+	scale: 1.5;
+	transition: 1.5s;
 }
 
 #titles{
@@ -58,15 +69,18 @@ body{
 	justify-content:space-around;
 	padding: 20px;
 	padding-top: 8rem;
+	flex-wrap: wrap;
+
 	
 }
 
 #horse-training-title, #dev-title{
-	width: 14%;
+	width: clamp(160px, 14%, 200px);
 	text-align: center;
 	background-color: var(--myrtle-green);
 	color:var(--isabelline);
 	padding: 1.5rem;
+	margin-bottom: 1.5rem;
 	border-radius: 60px;
 	cursor: pointer;
 	transition: 700ms;
@@ -86,3 +100,17 @@ body{
 	flex: 1 0 50%;
 
 } */
+
+
+
+@media only screen and (max-width:600px){
+	#title-container>h1{
+		font-size: 4rem;
+		margin: 2rem;
+		margin-top: 4rem;
+	}
+
+	#titles{
+		flex-wrap: wrap;
+	}
+}

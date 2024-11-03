@@ -57,11 +57,15 @@ a{
 	padding: 1rem;
 	padding-bottom: 2.5rem;
 	transition: 0.5s;
+    text-shadow: 7px 6px 0 var(--myrtle-green);
+
 }
 
 #title-container h1:hover{
 	scale: 1.5;
 	transition: 1.5s;
+    text-shadow: 8px 7px 0 var(--myrtle-green);
+
 }
 
 #titles{

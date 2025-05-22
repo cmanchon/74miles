@@ -112,7 +112,7 @@ h1::first-letter{
 }
 
 #horse-training-title, #dev-title{
-	width: clamp(160px, 14%, 200px);
+	width: clamp(max-content, 14%, 400px);
 	text-align: center;
 	background-color: var(--myrtle-green);
 	color:var(--isabelline);
